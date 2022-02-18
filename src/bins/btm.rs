@@ -29,7 +29,7 @@ fn main() {
 #[cfg(target_os = "linux")]
 mod cmd {
     use btm::{run_daemon, BtmCfg, SnapAlgo, SnapMode, ENV_VAR_BTM_VOLUME, STEP_CNT};
-    use clap::{arg, App, Arg, ArgMatches};
+    use clap::{arg, Arg, ArgMatches, Command};
     use ruc::*;
     use std::{env, process::exit};
 
@@ -135,9 +135,9 @@ mod cmd {
     }
 
     fn parse_cmdline() -> ArgMatches {
-        App::new("btm")
+        Command::new("btm")
         .subcommand(
-            App::new("daemon")
+            Command::new("daemon")
             .args(&[
                   arg!(-p --"snapshot-volume" [VolumePath] "a data volume containing both ledger data and tendermint data"),
                   arg!(-i --"snapshot-itv" [Iterval] "interval between adjacent snapshots, default to 10 blocks"),
