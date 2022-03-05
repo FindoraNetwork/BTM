@@ -1,9 +1,8 @@
-![GitHub top language](https://img.shields.io/github/languages/top/ccmlm/BTM)
-[![Latest Version](https://img.shields.io/crates/v/BTM.svg)](https://crates.io/crates/BTM)
-[![Rust Documentation](https://img.shields.io/badge/api-rustdoc-blue.svg)](https://docs.rs/BTM)
-![GitHub issues](https://img.shields.io/github/issues-raw/ccmlm/BTM)
-![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/ccmlm/BTM)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ccmlm/BTM/Rust)
+![GitHub top language](https://img.shields.io/github/languages/top/ccmlm/btm)
+[![Latest Version](https://img.shields.io/crates/v/btm.svg)](https://crates.io/crates/btm)
+[![Rust Documentation](https://img.shields.io/badge/api-rustdoc-blue.svg)](https://docs.rs/btm)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ccmlm/btm/Rust)
+[![Minimum rustc version](https://img.shields.io/badge/rustc-1.59+-lightgray.svg)](https://github.com/rust-random/rand#rust-version-requirements)
 
 # BTM
 
@@ -22,7 +21,11 @@ btm will give you the following abilities or advantages:
 - very small resource usage, almost no performance damage
 - ...
 
-## User Instructions
+## Library Usages
+
+**TODO**
+
+## Binary Usages
 
 **Usage of `btm ...`:**
 
