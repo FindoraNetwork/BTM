@@ -1,10 +1,10 @@
 [package]
 name = "btm"
-version = "0.6.3"
+version = "0.6.4"
 edition = "2021"
 keywords = ["vcs", "snapshot", "zfs", "btrfs"]
 license = "MIT"
-authors = ["fanhui.x@gmail.com"]
+authors = ["ccmlm","fanhui.x@gmail.com"]
 description = "Blockchain Time Machine"
 homepage = "https://github.com/ccmlm/btm"
 repository = "https://github.com/ccmlm/btm.git"
