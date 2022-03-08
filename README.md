@@ -23,7 +23,32 @@ btm will give you the following abilities or advantages:
 
 ## Library Usages
 
-**TODO**
+```rust
+use btm::{BtmCfg, SnapMode, SnapAlgo};
+
+let cfg = BtmCfg {
+    enable: true,
+    itv: 10,
+    cap: 100,
+    mode: SnapMode::Zfs,
+    algo: SnapAlgo::Fade,
+    volume: "zroot/data".to_owned(),
+};
+
+// Generate snapshots in some threads.
+cfg.snapshot(0).unwrap();
+cfg.snapshot(1).unwrap();
+cfg.snapshot(11).unwrap();
+
+/// Print all existing snapshots.
+cfg.list_snapshots();
+
+/// Rollback to the state of the last snapshot.
+cfg.rollback(None, false).unwrap();
+
+/// Rollback to the state of a custom snapshot.
+cfg.rollback(Some(11), true).unwrap();
+```
 
 ## Binary Usages
 
